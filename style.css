@@ -1,7 +1,6 @@
 :root {
     --primary-color: #0a1118;
-    --primary-color-highlight: #233D54;
-    /* variables with bs infront shown below are bootstrap styles we are over writing */
+    --primary-color-highlight: #233D54;    
     --bs-body-bg: #FBF0F6;    
     
 }
@@ -36,8 +35,7 @@ body{
 
   #map {
     height: 100% !important;
-    padding-bottom: 50%;
-    /* position: relative; */
+    padding-bottom: 50%;   
     width: 100%;
     border-radius: 10px;
  }
