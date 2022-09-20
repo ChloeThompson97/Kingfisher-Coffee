@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+<!-- BS Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+<!-- Bootstrap Library -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<!-- Google Maps API -->
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+
+<!-- Css -->
+    <link rel="stylesheet" href="style.css">
+    <title>Kingfisher Coffee</title>
+</head>
+<body>
+    <!-- Navbar -->
+   <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
+    <div class="container">
+        <a href="#" class="navbar-brand"><img src="imgs/logo2.png" alt=""></a>
+    <button 
+        class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="#ourStory" class="nav-link">Our Story</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#findUs" class="nav-link">Find Us</a>
+                </li>
+              
+            </ul>
+        </div>
+    </div>
+   </nav>
+
+   <!-- Hero -->
+   <section class="bgimage d-flex align-items-center ">
+    <div class="container-fluid">
+        <div id="intro" class="bg-image vh-100 shadow-1-strong">          
+            </video>     
+            <div class="container d-flex align-items-center justify-content-center text-center h-100 w-50">
+                <div class="text-white">
+                  <h1 class="mb-3 text-uppercase">Welcome</h1>
+                  <h5 class="mb-4">Come in for a visit </h5>
+        </div>
+        </div>   
+  </section>
+
+<!-- Features -->
+  <section class="bg-light text-dark p-3 text-center text-sm-start">
+    <div class="container">
+        <div class=" align-items-center justify-content-around row">          
+            <div class="p-lg-5 col">
+                <h1>Only the best coffee beans, roasted to perfection</h1>     
+            </div>
+            <div class="p-lg-5 col">               
+                <p class="lead my-4" >Whether you're dashing to the office, doing a spot of studying or looking to sit down and unwind allow us to be your companion in seizing the day.</p>
+                
+            </div>
+        </div>
+    </div> 
+</section>
+
+<!-- Img Feature -->
+<section class="bg-light text-dark p-2 text-center-md text-sm-start" id="ourStory">
+    <div class="container">
+        <div class="d-md-flex align-items-center justify-content-between">
+            <img class="img-fluid p-lg-4 w-50 d-none d-md-block" src="/imgs/bluecoff.jpg" alt="">
+            <img class="img-fluid p-lg-4 d-sm-block d-lg-none d-md-none d-xlg-none" src="/imgs/bluecoff.jpg" alt="">
+            <div class="p-sm-5">
+                <h1 class="pt-4">An Inherited Family Passion </h1>
+                <p class="lead my-4" > Coffee is something that many of us can't start the day without, and don't we know it! Our own infatuation with great coffee stems from our Italian lineage, where we learned that sipping an espresso in tiny streets on even tinier marble tables was, in fact, the best way to kick off the day. We use local produce to serve our clientele with sandwiches and baked goods made in-house, bringing our Italian influence to England's own tiny streets.</p>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Info -->
+<section class="bg-light text-dark p-5" id="findUs">
+    <div class="container d-md-flex align-items-center justify-content-between">
+<table class="table table-striped w-auto mx-5">    
+    <thead>
+        <tr>
+            <th scope="col" class="pb-2 "><h3>Opening Hours</h3></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <th>Monday</th>  
+          <td>7:30am - 5:30pm</td>
+        </tr>
+        <tr>
+          <th>Tuesday</th>  
+          <td>7:30am - 5:30pm</td>
+        </tr>
+        <tr>
+          <th>Wednesday</th>  
+          <td>7:30am - 5:30pm</td>
+        </tr>
+        <tr>
+          <th>Thursday</th>  
+          <td>7:30am - 5:30pm</td>
+        </tr>
+        <tr>
+          <th>Friday</th>  
+          <td>7:30am - 5:30pm</td>
+        </tr>
+        <tr>
+          <th>Saturday</th>  
+          <td>8:30am - 6pm</td>
+        </tr>
+        <tr>
+          <th>Sunday</th>  
+          <td>10am - 4pm</td>
+        </tr>
+    </tbody>
+</table>
+<div class="col-md">
+    <div id="map"></div>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="p-3 text-dark text-center position-relative bg-body">
+    <div class="container d-lg-flex justify-content-around">
+        <div><p>Copyright &copy; WEBCT 2022. <br> All rights reserved.</p></div>
+        <div>
+            <a href="#"><i class="bi bi-instagram text-dark px-2 h3 bi-hover"></i></a>
+            <a href="#"><i class="bi bi-facebook text-dark px-2 h3 bi-hover "></i></a>
+            <a href="#"><i class="bi bi-twitter text-dark px-2 h3 bi-hover "></i></a>
+            <a href="#"><i class="bi bi-arrow-up-circle h2 text-dark bi-hover"></i></a>            
+        </div>   
+    </div>    
+</footer>
+
+
+    
+</body>
+
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiY2hsb2V0aG9tcHNvbjk3IiwiYSI6ImNsN3JyaDh0YTBpNjczb3AydXZjNnppMjMifQ.xwGA55ZKXruNr93UlGYdFQ';
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v11',
+      center: [-1.7326, 51.4198],
+      zoom: 18,
+    });
+  </script>
+  <!-- <script>
+    var body = document.body,
+   html = document.documentElement;
+var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+document.getElementById('map').style.height = height + 'px';
+  </script> -->
+</html>
